@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Mountains of Christmas';
+    src: url('fonts/MountainsofChristmasC-Regular_C.ttf'),
+            url('fonts/MountainsofChristmas-Bold.ttf'),
+            url('fonts/MountainsofChristmas-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rounds';
+    src: url('fonts/Rounds Black.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #115A5B; /* устанавливаем зеленый цвет фона */
+    background-image: url('assets/tchk.png'); /* добавляем изображение */
+    background-size: 20% 20%; /* устанавливаем размер изображения на весь экран с учетом соотношения сторон */
+    background-repeat: repeat; /* устанавливаем повторение изображения */
+}
+
+header{
+    color: #E3D5C8;
+    font-family: 'Mountains of Christmas';
+    font-size: 20pt;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin: 4% 0 4% 0;
+}
+
+@media (max-width: 120000px){
+    img.cat{
+        position: relative;
+        width: 80px;
+        top: 309px;
+        z-index: 1;
+        right: 63px;
+        transform: rotate(20deg);
+    }
+
+    img.cat-none{
+        position: relative;
+        width: 80px;
+        top: 288px;
+        z-index: 1;
+        right: 63px;
+        transform: rotate(20deg);
+    }
+
+    .cat-text{
+        font-family: 'Mountains of Christmas';
+        font-size: 15pt;
+        color: #E3D5C8;
+        position: relative;
+        top: 311px;
+        left: 17px;
+        display: none;
+        width: 130px;
+        transform: rotate(15deg);
+    }
+}
+
+
+
+@media (max-width: 1200px){
+    header{
+        max-width: 970px;
+    }
+    main{
+        max-width: 970px;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+/*    .sec-snowball*/
+
+    img.cat{
+        position: relative;
+        width: 80px;
+        top: 309px;
+        z-index: 1;
+        right: 63px;
+        transform: rotate(20deg);
+    }
+
+    img.cat-none{
+        position: relative;
+        width: 80px;
+        top: 288px;
+        z-index: 1;
+        right: 63px;
+        transform: rotate(20deg);
+    }
+
+    .cat-text{
+        font-family: 'Mountains of Christmas';
+        font-size: 15pt;
+        color: #E3D5C8;
+        position: relative;
+        top: 311px;
+        left: 17px;
+        display: none;
+        width: 130px;
+        transform: rotate(15deg);
+    }
+}
+@media (max-width: 992px){
+    header{
+        max-width: 750px;
+    }
+    main{
+        max-width: 750px;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    img.cat{
+        position: relative;
+        width: 80px;
+        top: 309px;
+        z-index: 1;
+        right: -135px;
+        transform: rotate(20deg);
+    }
+
+    img.cat-none{
+        position: relative;
+        width: 80px;
+        top: 288px;
+        z-index: 1;
+        right: -135px;
+        transform: rotate(20deg);
+    }
+
+    .cat-text{
+        font-family: 'Mountains of Christmas';
+        font-size: 15pt;
+        color: #E3D5C8;
+        position: relative;
+        top: 311px;
+        left: 219px;
+        display: none;
+        width: 130px;
+        transform: rotate(15deg);
+    }
+}
+@media (max-width: 767px){
+    header{
+        max-width: none;
+    }
+    main{
+        max-width: none;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    img.cat{
+        position: relative;
+        width: 80px;
+        top: 309px;
+        z-index: 1;
+        right: 63px;
+        transform: rotate(20deg);
+    }
+
+    img.cat-none{
+        position: relative;
+        width: 80px;
+        top: 288px;
+        z-index: 1;
+        right: 63px;
+        transform: rotate(20deg);
+    }
+
+    .cat-text{
+        font-family: 'Mountains of Christmas';
+        font-size: 15pt;
+        color: #E3D5C8;
+        position: relative;
+        top: 311px;
+        left: 17px;
+        display: none;
+        width: 130px;
+        transform: rotate(15deg);
+    }
+}
+
+.sec-snowball{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/clouds.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+}
+
+div.border-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 309px;
+    height: 311px;
+    background-image: linear-gradient(0.25turn, #E3D3C400, #FF8A1D9D, #E3D3C4, #FF8A1D9D, #E3D3C400);
+    border-radius: 50%;
+    padding-top: 2px;
+}
+
+div.back-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    height: 312px;
+    background-color: #115A5B;
+    border-radius: 50%;
+}
+
+img{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+svg{
+    position: relative;
+}
+
+#snow1{
+    top: -210px;
+    left: 70px;
+    animation: move_snow 5s ease-in-out infinite;
+    animation-timing-function: linear;
+}
+#snow2{
+    top: -230px;
+    left: -70px;
+    animation: move_snow 8s ease-in-out infinite;
+    animation-timing-function: linear;
+}
+#snow3{
+    top: -250px;
+    left: 100px;
+    animation: move_snow 3s ease-in-out infinite;
+    animation-timing-function: linear;
+}
+#snow4{
+    top: -240px;
+    left: -130px;
+    animation: move_snow 4s ease-in-out infinite;
+    animation-timing-function: linear;
+}
+#snow5{
+    top: -290px;
+    left: -30px;
+    animation: move_snow 6s ease-in-out infinite;
+    animation-timing-function: linear;
+}
+#snow6{
+    top: -290px;
+    left: 30px;
+    animation: move_snow 9s ease-in-out infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes move_snow {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(35px);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateY(145px);
+        opacity: 0;
+    }
+}
+
+div.border-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -75px;
+    width: 309px;
+    background-image: linear-gradient(0.25turn, #FF8A1D9D, #E3D3C4, #FF8A1D9D);
+    border-radius: 20px;
+    padding-bottom: 2px;
+}
+
+div.back-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 310px;
+    background-color: #073233;
+    border-radius: 20px;
+    font-size: 16pt;
+    color: #E3D5C8;
+    padding: 6px 0 6px 0;
+    font-family: 'Mountains of Christmas';
+}
+
+
+.date{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 700px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p.text-date{
+    font-family: 'Mountains of Christmas';
+    color: #FFF080;
+    font-size: 40pt;
+}
+
+
+.santa{
+    width: 100%;
+    position: relative;
+    bottom: 27%
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    color: #E3D5C8;
+}
+
+.svg-snow{
+    position: absolute;
+    right:0;
+}
+
+.footer{
+    margin: 15px 0;
+}
+
+.places{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col{
+    float: left;
+    width: 300px;
+    height: 355px;
+    margin: 0 50px 0px 50px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-circle{
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+
+.card-circle img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.card-circle::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    box-shadow: 0px 0px 23px 0px #FFF inset, 0px 0px 23px 0px #FFF inset, 0px 0px 23px 0px #FFF inset,
+                0px 0px 23px 0px #FFF inset, 0px 0px 5px 0px #FFF, 0px 0px 5px 0px #FFF,
+                0px 0px 5px 0px #FFF, 0px 0px 5px 0px #FFF, 0px 0px 5px 0px #FFF,
+                0px 0px 5px 0px #FFF, 0px 0px 5px 0px #FFF, 0px 0px 5px 0px #FFF;
+}
+
+.text-h{
+    color: #E3D5C8;
+    font-family: 'Mountains of Christmas';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 60px;
+}
+
+.text-form{
+    font-family: 'Mountains of Christmas';
+    font-size: 18pt;
+    color: #E3D5C8;
+}
+
+.card-d{
+    padding: 15px 0;
+    border-radius: 58px 58px 10px 10px;
+    background: #167475;
+    box-shadow: 0px 6px 6px 0px rgba(255, 255, 255, 0.10) inset;
+    color: #E3D5C8;
+    font-family: 'Rounds';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    bottom: 53px;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+div.border-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 309px;
+    background-image: linear-gradient(0.25turn, #FF8A1D9D, #E3D3C4, #FF8A1D9D);
+    border-radius: 20px;
+    padding-bottom: 2px;
+    margin: 50px 25px;
+}
+
+div.border-input2{
+    margin: 50px 25px;
+}
+
+.back-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    background-color: #073233;
+    border-radius: 20px;
+    font-size: 16pt;
+    color: #E3D5C8;
+    padding: 6px 0 6px 0;
+    font-family: 'Mountains of Christmas';
+}
+
+.div-inline{
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+  animation: animate__swing; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
